@@ -3,7 +3,8 @@
 /**
  * main - prints a string to the console
  *
- * Description - prints "with proper grammar, but the outcome is a piece of art,"
+ * Description - prints "with proper grammar, but the outcome
+ * is a piece of art,"
  *
  * Return: Always 0 (Success)
  */
