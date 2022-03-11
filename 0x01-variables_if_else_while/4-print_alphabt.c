@@ -3,7 +3,7 @@
 /**
  * main - prints letters
  *
- * Description - prints all letters in lowercase except for 
+ * Description - prints all letters in lowercase except for
  * q and e
  *
  * Return: Always 0 (Success)
