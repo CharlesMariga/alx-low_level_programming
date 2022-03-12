@@ -21,28 +21,24 @@ int main(void)
 			{
 				for (l = 48; l <= 57; l++)
 				{
-					int numI = i - 48;
-					int numJ = j - 48;
-					int numK = k - 48;
-					int numL = l - 48;
-					
 					int current = (i * 1000) + (j * 100) + (k * 10) + l;
 					int perm = (k * 1000) + (l * 100) + (i * 10) + j;
-					
+
 					if (current < perm)
 					{
-						if (nums != 0)
-						{
-							putchar(44);
-							putchar(32);
-						}
 
-						putchar(i);
-						putchar(j);
+					if (nums != 0)
+					{
+						putchar(44);
 						putchar(32);
-						putchar(k);
-						putchar(l);
-						nums++;
+					}
+
+					putchar(i);
+					putchar(j);
+					putchar(32);
+					putchar(k);
+					putchar(l);
+					nums++;
 					}
 				}
 			}
