@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * main - prints to console
  *
@@ -5,8 +7,6 @@
  *
  * Return: Always 0 (Success)
  */
-int _putchar(char c);
-
 int main(void)
 {
 	char text[] = "_putchar";
