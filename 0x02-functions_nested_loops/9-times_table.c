@@ -30,6 +30,8 @@ void times_table(void)
 				_putchar(num % 10 + '0');
 			} else
 			{
+				if (j >= 2)
+					_putchar(' ');
 				_putchar(num + '0');
 			}
 
