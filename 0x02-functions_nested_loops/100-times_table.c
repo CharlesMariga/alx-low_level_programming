@@ -19,14 +19,34 @@ void print_times_table(int n)
 			j = 0;
 			while (j <= n)
 			{
-				if (j == 0)
+				int res = i * j;
+				if (j !=0)
 				{
-					_putchar('0');
-				} else if (j < 10) {
-					
+					_putchar(',');
+					_putchar(' ');
 				}
+				
+				if (res < 10)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(res + '0');
+				} else if (res < 100)
+				{
+					_putchar(' ');
+					_putchar(res / 10 + '0');
+					_putchar(res % 10 + '0');
+				} else if (res >= 100)
+				{
+					_putchar(res / 100 + '0');
+					_putchar((res % 100) / 10 + '0');
+					_putchar((res % 100) % 10 + '0');
+				}
+				j++;	
 			}
+			_putchar('\n');
 			i++;
 		}
+		_putchar('\n');
 	}
 }
