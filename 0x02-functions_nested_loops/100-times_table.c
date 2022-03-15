@@ -26,7 +26,11 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 				
-				if (res < 10)
+				if (res == 0 && j == 0)
+				{
+					_putchar('0');
+				}
+				else if (res < 10)
 				{
 					_putchar(' ');
 					_putchar(' ');
