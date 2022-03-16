@@ -10,23 +10,25 @@
  */
 int main(void)
 {
-	long int count = 3;
-	long int previous = 1, current = 2, sum = 0;
+	long int total_sum, sum, first, second;
 
-	printf("%ld, %ld", previous, current);
+	total_sum = 0;
+	sum = 0;
+	first = 0;
+	second = 1;
 
-	while (count <= 4000000)
+	while (sum < 4000000)
 	{
-		long int new_num = previous + current;
-
-		if (new_num % 2 == 0)
-			sum += new_num;
-
-		previous = current;
-		current = new_num;
-		count++;
+		sum = first + second;
+		if (sum % 2 == 0)
+		{
+			total_sum += sum;
+		}
+		first = second;
+		second = sum;
 	}
-	printf("%ld\n", sum);
+
+	printf("%li\n", total_sum);
 
 	return (0);
 }
