@@ -9,15 +9,16 @@
  */
 int main(void)
 {
-	int count = 2, previous = 1, current = 2;
+	int count = 2;
+	long int previous = 1, current = 2;
 
-	printf("%d, %d", previous, current);
+	printf("%ld, %ld", previous, current);
 
 	while (count <= 50)
 	{
-		int new_num = previous + current;
+		long int new_num = previous + current;
 
-		printf(", %d", new_num);
+		printf(", %ld", new_num);
 		previous = current;
 		current = new_num;
 		count++;
