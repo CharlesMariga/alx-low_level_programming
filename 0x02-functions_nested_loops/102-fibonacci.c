@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int count = 2;
+	int count = 3;
 	long int previous = 1, current = 2;
 
 	printf("%ld, %ld", previous, current);
