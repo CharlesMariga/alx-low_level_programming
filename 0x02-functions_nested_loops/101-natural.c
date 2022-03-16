@@ -10,9 +10,9 @@
  */
 int main(void)
 {
-	int sum = 0;
+	int sum = 0, i;
 
-	for(int i = 1023; i > 0; i--)
+	for(i = 1023; i > 0; i--)
 	{
 		int rem3 = i % 3;
 		int rem5 = i % 5;
