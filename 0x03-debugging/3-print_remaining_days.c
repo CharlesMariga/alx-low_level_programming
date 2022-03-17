@@ -12,9 +12,6 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	printf("Month: %d\n", month);
-	printf("Day: %d\n", day);
-	printf("Year: %d\n", year);
 	if ((year % 4 == 0 && !(year % 100 == 0)) || year % 400 == 0)
 	{
 		if (month >= 2 && day >= 60)
