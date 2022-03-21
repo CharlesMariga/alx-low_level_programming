@@ -7,7 +7,7 @@
  *
  * Description: create of copy of src and copy's it to dest
  *
- * Return: void
+ * Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {
