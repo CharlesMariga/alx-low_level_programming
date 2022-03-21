@@ -13,13 +13,14 @@ void puts2(char *str)
 {
 	int i = 0;
 
-	do {
-		if (i % 2 == 0 && str[i] && str)
+	while (str && str[i] && str[i] != 0)
+	{
+		if (i % 2 == 0)
 		{
 			_putchar(str[i]);
 		}
 		i++;
-	} while (str && str[i] != 0);
+	}
 	_putchar('\n');
 }
 
