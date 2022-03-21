@@ -18,5 +18,5 @@ int _strlen(char *s)
 		counter++;
 	}
 
-	return (sizeof(*s) * 16);
+	return (sizeof(*s) * counter);
 }
