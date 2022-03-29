@@ -1,41 +1,51 @@
 #include "main.h"
 
 /**
+ * compare - compares two string
+ * @X: first string
+ * @Y: second string
+ *
+ * Description: compares two string and checks if they
+ * are the same.
+ *
+ * Return: int
+ */
+int compare(char *X, char *Y)
+{
+	while (*X && *Y)
+	{
+	if (*X != *Y)
+	{
+		return (0);
+	}
+
+		X++;
+		Y++;
+	}
+
+	return (*Y == '\0');
+}
+
+/**
  * _strstr - locates a substring
  * @haystack: string to be located in
  * @needle: string to locate
  *
- * Description: finds the first occurence of the substring
+ * Description: finds the first occurrence of the substring
  * needle in the string haystack.
  *
  * Return: char pointer
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, start;
-	int nlen = 0;
-
-	i = 0;
-	j = 0;
-	start = 0;
-
-	while (needle[nlen] != '\0')
+	while (*haystack)
 	{
-		nlen++;
-	}
-	for (i = 0; haystack[i] != '\0'; i++)
-	{
-		for (j = 0; j < nlen && haystack[i] == needle[j]; j++, i++)
+		if (*haystack == *needle && compare(haystack, needle))
 		{
-			if (j == 0)
-			{
-				start = i;
-			}
-			if (j == nlen - 1)
-			{
-				return (haystack + start);
-			}
+			return (haystack);
 		}
+		haystack++;
 	}
+
 	return (0);
 }
