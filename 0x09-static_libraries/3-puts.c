@@ -1,14 +1,21 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _puts - Print a string folllowed by a new line.
+ * _puts - prints strings
+ * @str: pointer to strings
  *
- * @str: String to be printed
+ * Description: prints a string having being passed a pointer
  *
- * Return: Nothing
+ * Return: void
  */
-
 void _puts(char *str)
 {
-	printf("%s\n", str);
+	int counter = 0;
+
+	while (*(str + counter) != 0)
+	{
+		_putchar(*(str + counter));
+		counter++;
+	}
+	_putchar('\n');
 }
