@@ -1,21 +1,28 @@
 #include "main.h"
 
 /**
- * _strcmp - compares two strings
- * @s1: string one
- * @s2: string two
+ * _strcmp - Compare two strings
  *
- * Description: compares string and returns their ascii difference
+ * @s1: First string
  *
- * Return: int
+ * @s2: Second string
+ *
+ * Return: 0 if equal, less than 1 or greater than 1
  */
+
 int _strcmp(char *s1, char *s2)
 {
-	while (*s1 && (*s1 == *s2))
-	{
-		s1++;
-		s2++;
-	}
+	int diff = 0;
+	int i = 0;
 
-	return (*(const unsigned char *)s1 - *(const unsigned char *)s2);
+	while (s1[i])
+	{
+		if (s1[i] != s2[i])
+		{
+			diff = ((s1[i] - '\0') - (s2[i] - '\0'));
+			break;
+		}
+		i++;
+	}
+	return (diff);
 }

@@ -1,43 +1,29 @@
- #include "main.h"
+#include "main.h"
 
 /**
- * is_numerical - Check if is a digit
- * @n: Number
- * Return: If is a number, return 1 else return 0
+ * _atoi - convert a number in a string to an integer
+ *
+ * @s: String to be converted
+ *
+ * Return: converted integer OR 0 if none
  */
-int is_numerical(unsigned int n)
-{
-	return (n >= '0' && n <= '9');
-}
 
-/**
- * _atoi - Convert a string to a number
- * @s: String
- * Return: Return the num
- */
 int _atoi(char *s)
 {
-	unsigned int number, i;
-	int sign;
+	int sign_cache = 1;
+	int result = 0;
 
-	sign = 1;
-	number = 0;
-
-	/*Start FOR*/
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[0] != '\0')
 	{
-		if (is_numerical(s[i])) /*Condition*/
-		{
-			number = (s[i] - 48)  + number * 10;
+		if (s[0] == '-')
+			sign_cache *= -1;
+		else if (s[0] >= '0' && s[0] <= '9')
+			result = (result * 10) + (s[0] - '0') * sign_cache;
+		else if (result)
+			break;
 
-			if (s[i + 1] == ' ')
-				break;
-		}
-		else if (s[i] == '-')
-		{
-			sign *= -1;
-		}
-
+		s++;
 	}
-	return (number * sign);
+
+	return (result);
 }
