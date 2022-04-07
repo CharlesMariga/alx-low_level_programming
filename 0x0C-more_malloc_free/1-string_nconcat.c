@@ -33,7 +33,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= s2Length)
 		newArrLength = s1Length + s2Length;
 	else
+	{
 		newArrLength = s1Length + n;
+		s2Length = n;
+	}
 
 	newArrLength++;
 
