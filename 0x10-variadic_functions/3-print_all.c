@@ -7,7 +7,6 @@
  * print_char - print char
  * @args: list of arguments
  */
-
 void print_char(va_list args)
 {
 	printf("%c", va_arg(args, int));
