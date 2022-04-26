@@ -11,3 +11,6 @@
 - [8-sum_listint.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/8-sum_listint.c) - Returns the sum of all data(n) in a **listint_t** linked list.
 - [9-insert_nodeint.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/9-insert_nodeint.c) - Inserts a new node at a certain position and return the new inserted node.
 - [10-delete_nodeint.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/10-delete_nodeint.c) - Delete a node at a certain position and return 1 if success and -1 if it failed.
+- [101-print_listint_safe.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/101-print_listint_safe.c) - Prints a **listint_t** linked list.
+- [102-free_listint_safe.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/102-free_listint_safe.c) - Free a **listint_t** linked list.
+- [103-find_loop.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x13-more_singly_linked_lists/103-find_loop.c) - Finding a loop in a linked list.
