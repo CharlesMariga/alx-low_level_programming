@@ -4,4 +4,5 @@
 - [1-print_binary.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x14-bit_manipulation/1-print_binary.c) - Printing a binary representation of a number.
 - [2-get_bit.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x14-bit_manipulation/2-get_bit.c) - Returning the value of a bit at a give index;
 - [3-set_bit.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x14-bit_manipulation/3-set_bit.c) - Sets the value of a bit to 1 at a given index.
-- [4-clear_bit.c]() - Sets the value of a bit to 0 at a given index.
+- [4-clear_bit.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x14-bit_manipulation/4-clear_bit.c) - Sets the value of a bit to 0 at a given index.
+- [5-flip_bits.c]() - Returns the number of bits you would need to flip to get from one number to another.
