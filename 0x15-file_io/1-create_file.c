@@ -15,7 +15,7 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, textCount = 0, write_status;
+	int fd, text_count = 0, write_status;
 
 	if (filename == NULL)
 		return (-1);
@@ -24,15 +24,15 @@ int create_file(const char *filename, char *text_content)
 	if (fd == -1)
 		return (-1);
 
-	if (!textCount)
+	if (!text_content)
 	{
 		text_content = "";
 	}
 
-	while (*(text_content + textCount))
-		textCount++;
+	while (*(text_content + text_count))
+		text_count++;
 
-	write_status = write(fd, text_content, textCount);
+	write_status = write(fd, text_content, text_count);
 	if (write_status == -1)
 	{
 		close(fd);
