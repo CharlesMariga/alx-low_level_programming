@@ -21,33 +21,35 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *buf;
 	ssize_t read_check, wcount;
 
-	buf = malloc(sizeof(char) * (letters));
 
-	if (!buf)
+	if (!filename)
+		return (0);
+
+	buf = malloc(sizeof(char) * (letters + 1));
+	if (buf == NULL)
 	{
 		free(buf);
 		return (0);
 	}
 
-	if (!filename)
-		return (0);
-
 	fd = open(filename, O_RDONLY);
-
 	if (fd == -1)
 		return (0);
 
-	read_check = read(fd, buf, letters);
-	if (read_check == 0)
+	read_check = read(fd, buf, sizeof(char) * letters);
+	if (read_check == -1)
+	{
+		free(buf);
+		close(fd);
 		return (0);
+	}
 
 	wcount = write(STDOUT_FILENO, buf, read_check);
 	if (wcount == -1 || read_check != wcount)
 		return (0);
 
 	free(buf);
-
 	close(fd);
 
-	return (letters);
+	return (wcount);
 }
