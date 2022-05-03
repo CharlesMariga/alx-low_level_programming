@@ -24,17 +24,19 @@ int create_file(const char *filename, char *text_content)
 	if (fd == -1)
 		return (-1);
 
-	if (textCount)
+	if (!textCount)
 	{
-		while (*(text_content + textCount))
-			textCount++;
+		text_content = "";
+	}
 
-		write_status = write(fd, text_content, textCount);
-		if (write_status == -1)
-		{
-			close(fd);
-			return (-1);
-		}
+	while (*(text_content + textCount))
+		textCount++;
+
+	write_status = write(fd, text_content, textCount);
+	if (write_status == -1)
+	{
+		close(fd);
+		return (-1);
 	}
 
 	close(fd);
