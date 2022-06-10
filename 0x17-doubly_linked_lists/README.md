@@ -8,4 +8,5 @@
 - [5-get_dnodeint.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/5-get_dnodeint.c) - A function that returns the nth node of a **dlistint_t** linked list.
 - [6-sum_dlistint.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/6-sum_dlistint.c) - A function that returns the sum of all the data (n) of a **dlistint_t** linked list.
 - [7-insert_dnodeint.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/7-insert_dnodeint.c) - A function that inserts a new node at a given position.
-- [8-delete_dnodeint.c]() - A function that deletes the node at index **index** of a **dlistint_t** linked list.
+- [8-delete_dnodeint.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x17-doubly_linked_lists/8-delete_dnodeint.c) - A function that deletes the node at index **index** of a **dlistint_t** linked list.
+- [100-password]() - Find the password for **crackme4**.
