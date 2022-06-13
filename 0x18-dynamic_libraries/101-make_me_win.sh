@@ -1,2 +1,3 @@
 #!/bin/bash
-export LD_PRELOAD="./libgiga.so"
+wget -P . https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x18-dynamic_libraries/libgiga.so
+export LD_PRELOAD="$PWD/libgiga.so"
