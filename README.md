@@ -7,4 +7,4 @@
 - [0x15 - file_io](https://github.com/CharlesMariga/alx-low_level_programming/tree/main/0x15-file_io) - File I/O.
 - [0x17 - doubly_linked_lists](https://github.com/CharlesMariga/alx-low_level_programming/tree/main/0x17-doubly_linked_lists) - Doubly linked lists.
 - [0x18. C - Dynamic libraries](https://github.com/CharlesMariga/alx-low_level_programming/tree/main/0x18-dynamic_libraries) - Dynamic libraries.
-- [0x1A. C - Hash tables]() - Hash tables.
+- [0x1A. C - Hash tables](https://github.com/CharlesMariga/alx-low_level_programming/tree/main/0x1A-hash_tables) - Hash tables.
