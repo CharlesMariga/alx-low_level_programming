@@ -21,7 +21,6 @@ void hash_table_print(const hash_table_t *ht)
 	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
-		element = 0;
 		current = ht->array[i];
 		while (current != NULL)
 		{
