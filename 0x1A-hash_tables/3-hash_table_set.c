@@ -1,5 +1,30 @@
 #include "hash_tables.h"
 
+/**
+ * check_key - checks key
+ *
+ * @current: current node
+ * @key: key
+ * @value: new value of the key
+ *
+ * Description: check for key in the hash table
+ *
+ * Return: 1 if present, 0 otherwise
+ */
+int check_key(hash_node_t *current, char *key, char *value)
+{
+	while (current != NULL)
+	{
+		if (strcmp(current->key, key) == 0)
+		{
+			free(current->value);
+			current->value = value;
+			return (1);
+		}
+		current = current->next;
+	}
+	return (0);
+}
 
 /**
  * hash_table_set -  set a hashtable key and value
@@ -31,6 +56,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	index = key_index((unsigned char *)key, ht->size);
+
+	if (check_key(ht->array[index], key_copy, value_copy) == 1)
+		return (1);
+
 	new_node = malloc(sizeof(hash_node_t));
 	if (!new_node)
 	{
