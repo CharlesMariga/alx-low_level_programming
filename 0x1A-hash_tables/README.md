@@ -6,4 +6,5 @@
 - [3-hash_table_set.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x1A-hash_tables/3-hash_table_set.c) - A function that adds an element to the hash table.
 - [4-hash_table_get.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x1A-hash_tables/4-hash_table_get.c) - A function that retrieves a value associated with a key.
 - [5-hash_table_print.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x1A-hash_tables/5-hash_table_print.c) - A unction that prints a hash table.
-- [6-hash_table_delete.c]() - A function that deletes a hash table.
+- [6-hash_table_delete.c](https://github.com/CharlesMariga/alx-low_level_programming/blob/main/0x1A-hash_tables/6-hash_table_delete.c) - A function that deletes a hash table.
+- [100-sorted_hash_table.c]() - Sorted hash tables.
